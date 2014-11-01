@@ -19,6 +19,8 @@
 		CA78F0F3188028730024FE31 /* LockBackground-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA78F0E41880269B0024FE31 /* LockBackground-568@2x.png */; };
 		CA78F0F4188028730024FE31 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA78F0F1188028090024FE31 /* Info.plist */; };
 		CA802518188EF01800130A35 /* LockBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA802517188EF01800130A35 /* LockBackground@2x.png */; };
+		D3EFA5821A055D0500445EBB /* LockBackgroundLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EFA5811A055D0500445EBB /* LockBackgroundLarge@2x.png */; };
+		D3EFA5841A05661D00445EBB /* fanback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EFA5831A05661D00445EBB /* fanback@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CA78F0EF188027260024FE31 /* SBFProceduralWallpaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBFProceduralWallpaper.h; sourceTree = "<group>"; };
 		CA78F0F1188028090024FE31 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA802517188EF01800130A35 /* LockBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LockBackground@2x.png"; sourceTree = "<group>"; };
+		D3EFA5811A055D0500445EBB /* LockBackgroundLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LockBackgroundLarge@2x.png"; sourceTree = "<group>"; };
+		D3EFA5831A05661D00445EBB /* fanback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fanback@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 		CA78F0C8188025560024FE31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3EFA5811A055D0500445EBB /* LockBackgroundLarge@2x.png */,
 				CA78F0E41880269B0024FE31 /* LockBackground-568@2x.png */,
 				CA802517188EF01800130A35 /* LockBackground@2x.png */,
 				CA467FEB18802BD500D6E668 /* fan@2x.png */,
+				D3EFA5831A05661D00445EBB /* fanback@2x.png */,
 				CA467FED1880356700D6E668 /* cover@2x.png */,
 				CA467FEF188037A000D6E668 /* Preview@2x.png */,
 				CA3BAAC3195BE85500126ADB /* Preview_hero@2x.png */,
@@ -172,7 +178,9 @@
 			files = (
 				CA802518188EF01800130A35 /* LockBackground@2x.png in Resources */,
 				CA78F0F3188028730024FE31 /* LockBackground-568@2x.png in Resources */,
+				D3EFA5841A05661D00445EBB /* fanback@2x.png in Resources */,
 				CA467FF0188037A000D6E668 /* Preview@2x.png in Resources */,
+				D3EFA5821A055D0500445EBB /* LockBackgroundLarge@2x.png in Resources */,
 				CA3BAAC4195BE85500126ADB /* Preview_hero@2x.png in Resources */,
 				CA467FEE1880356700D6E668 /* cover@2x.png in Resources */,
 				CA467FEC18802BD500D6E668 /* fan@2x.png in Resources */,
@@ -222,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
@@ -252,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				iOSOpenDevPath = /opt/iOSOpenDev;

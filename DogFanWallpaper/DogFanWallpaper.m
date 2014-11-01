@@ -1,5 +1,5 @@
 #import "DogFanWallpaper.h"
-#define _4inch  [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568.0
+#define LONGSCREEN  [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568.0
 
 @interface DogFanWallpaper ()
 @end
@@ -50,11 +50,6 @@
         return nil;
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    if (_4inch) {
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"LockBackground-568@2x" ofType:@"png"]]];
-    }
-    else
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"LockBackground@2x" ofType:@"png"]]];
     
     plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/tw.hiraku.dogfan.plist"];
     
@@ -62,6 +57,11 @@
     offset = [[plistDict objectForKey:@"offset"] floatValue];
     if (rpm < 10)
         rpm = 150;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [imageView setImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"LockBackgroundLarge@2x" ofType:@"png"]]];
+    [imageView setContentMode:UIViewContentModeCenter];
+    [self addSubview:imageView];
     
     fan = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"fan@2x" ofType:@"png"]]];
     fan.frame = CGRectMake(self.frame.size.width/2-64, self.frame.size.height/2-40, 128, 128);
